@@ -9,23 +9,13 @@ document.getElementById("btn").addEventListener("click", function () {
         }, 2000);
     })
     .then((num) => {
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                let result = num * 2;
-                outputDiv.textContent = Result: ${result};
-                resolve(result);
-            }, 2000);
-        });
-    })
-    .then((num) => {
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                let result = num - 3;
-                outputDiv.textContent = Result: ${result};
-                resolve(result);
-            }, 1000);
-        });
-    })
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            let result = num + 10;
+            outputDiv.textContent = `Final Result: ${result}`;
+            resolve(result);
+        }, 1000);
+    });
     .then((num) => {
  return new Promise((resolve) => {
             setTimeout(() => {
