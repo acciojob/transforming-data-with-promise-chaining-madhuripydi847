@@ -1,4 +1,6 @@
-document.getElementById("btn").addEventListener("click", function () {
+// your JS code here. if required.
+document.getElementById("btn").addEventListener("click", function ()
+	{
     const inputValue = Number(document.getElementById("ip").value);
     const outputDiv = document.getElementById("output");
 
