@@ -20,7 +20,7 @@ document.getElementById("btn").addEventListener("click", function () {
 
     new Promise((resolve) => {
         setTimeout(() => {
-            outputDiv.textContent = Result: ${inputValue};
+            outputDiv.textContent = `Result: ${inputValue}`;
             resolve(inputValue);
         }, 2000);
     })
@@ -28,7 +28,7 @@ document.getElementById("btn").addEventListener("click", function () {
         return new Promise((resolve) => {
             setTimeout(() => {
                 let result = num * 2;
-                outputDiv.textContent = Result: ${result};
+                outputDiv.textContent = `Result: ${result}`;
                 resolve(result);
             }, 2000);
    });
@@ -37,7 +37,7 @@ document.getElementById("btn").addEventListener("click", function () {
         return new Promise((resolve) => {
             setTimeout(() => {
                 let result = num - 3;
-                outputDiv.textContent = Result: ${result};
+                outputDiv.textContent = `Result: ${result}`;
                 resolve(result);
             }, 1000);
         });
@@ -46,7 +46,7 @@ document.getElementById("btn").addEventListener("click", function () {
         return new Promise((resolve) => {
             setTimeout(() => {
                 let result = num / 2;
-                outputDiv.textContent = Result: ${result};
+                outputDiv.textContent = `Result: ${result}`;
                 resolve(result);
             }, 1000);
         });
@@ -55,9 +55,8 @@ document.getElementById("btn").addEventListener("click", function () {
         return new Promise((resolve) => {
             setTimeout(() => {
                 let result = num + 10;
-                outputDiv.textContent = Final Result: ${result};
+                outputDiv.textContent = `Final Result: ${result}`;
                 resolve(result);
             }, 1000);
-        });
-    });
-});
+        });
+    });
