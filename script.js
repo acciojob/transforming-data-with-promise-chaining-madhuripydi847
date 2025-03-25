@@ -1,4 +1,3 @@
-//your JS code here. If required.
 document.getElementById("btn").addEventListener("click", function () {
     const inputValue = Number(document.getElementById("ip").value);
     const outputDiv = document.getElementById("output");
@@ -28,7 +27,7 @@ document.getElementById("btn").addEventListener("click", function () {
         });
     })
     .then((num) => {
-        return new Promise((resolve) => {
+ return new Promise((resolve) => {
             setTimeout(() => {
                 let result = num / 2;
                 outputDiv.textContent = Result: ${result};
@@ -39,10 +38,4 @@ document.getElementById("btn").addEventListener("click", function () {
     .then((num) => {
         return new Promise((resolve) => {
             setTimeout(() => {
-   let result = num + 10;
-                outputDiv.textContent = Final Result: ${result};
-                resolve(result);
-            }, 1000);
-        });
-    });
-});
+                let result = num + 
